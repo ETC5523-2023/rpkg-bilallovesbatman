@@ -21,11 +21,11 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of tvrating is tointroduce the user to the package and aid them with using it.
+The goal of tvrating is to introduce the user to the package and aid them with using it.
 
 ## Installation
 
-You can install the development version of tvrating from [GitHub](https://github.com/) with:
+You can install the development version of `tvrating` from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -58,7 +58,6 @@ Another example is being able to plot the genre distribution plot based on the s
 
 ```{r}
 genre_plot(tv_ratings, selected_genre = 5)
-
 ```
 
 The distribution of different genres is plotted based on the user's selection on the filter.
