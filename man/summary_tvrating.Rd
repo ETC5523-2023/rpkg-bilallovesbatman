@@ -7,22 +7,22 @@
 summary_tvrating(tvrating)
 }
 \arguments{
-\item{tv_data}{is the data frame that contains the TV ratings data.}
+\item{tvrating}{A data frame that contains the TV ratings data.}
 }
 \value{
-is the data frame with two columns: "Statistic" (the name of the statistic) and "Value".
+A data frame with two columns: "Statistic" (the name of the statistic) and "Value" (the five-number summary values).
 }
 \description{
-This calculates the five-number summary (minimum, Q1, median, Q3, maximum) for the "av_rating" column in the TV ratings dataset.
+This function calculates the five-number summary (minimum, Q1, median, Q3, maximum) for the "av_rating" column in the TV ratings dataset.
 }
 \details{
-If the input is a numerical vector of at least 5 values, it returns a data frame with two columns in which the first column consists the names of the values (minimum, Q1, median, Q3, maximum) while the second column returns the five number summary values.
+If the input is a numerical vector of at least 5 values, it returns a data frame with two columns in which the first column consists of the names of the values (minimum, Q1, median, Q3, maximum) while the second column returns the five-number summary values.
 
 If the input is a numerical vector of less than 5 values, it returns NULL.
 }
 \examples{
 summary_tvrating(tv_ratings)
 
-where tv_ratings is the dataset used.
+# where "tv_ratings" is the dataset used.
 
 }

@@ -13,7 +13,17 @@
 #'
 #'genre_plot(tv_ratings, selected_genre = 5)
 #'
-#' tv_ratings is the dataset while selected_genre = 5 shows the top 5 genres in the plot.
+#' # tv_ratings is the dataset while selected_genre = 5 shows the top 5 genres in the plot.
+#'
+#' @import ggplot2
+#' @import tidyr
+#' @importFrom tidyr separate_rows
+#' @importFrom dplyr %>%
+#' @importFrom dplyr select
+#' @importFrom dplyr filter
+#' @importFrom dplyr count
+#' @importFrom dplyr slice_max
+#' @export
 #'
 #' @export
 genre_plot <- function(tv_data, selected_genre) {
@@ -41,5 +51,5 @@ genre_plot <- function(tv_data, selected_genre) {
           axis.title.x = element_text(size = 15),
           axis.title.y = element_text(size = 15))
 
-  return(ggplotly(p1))
+  return(p1)
 }

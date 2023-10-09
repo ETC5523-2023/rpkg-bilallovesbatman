@@ -19,5 +19,9 @@ Suggests:
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 Imports: 
-    plotly,
+    dplyr,
+    ggplot2,
+    shiny,
+    shinydashboard,
+    tidyr,
     tidyverse

@@ -23,6 +23,6 @@ top genres.
 
 genre_plot(tv_ratings, selected_genre = 5)
 
-tv_ratings is the dataset while selected_genre = 5 shows the top 5 genres in the plot.
+# tv_ratings is the dataset while selected_genre = 5 shows the top 5 genres in the plot.
 
 }
