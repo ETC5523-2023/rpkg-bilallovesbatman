@@ -1,18 +1,16 @@
 Package: tvrating
-Title: What the Package Does (One Line, Title Case)
+Title: TV Show Analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("Bilal", "Raja", , "braj0004@student.monash.edu", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Bilal", "Raja", email = "braj0004@student.monash.edu", role = c("aut", "cre"))
+Description: This package is designed to assist users in exploring and gaining insights from the TV ratings data. It includes functions for calculating summary statistics and generating genre distribution plots as examples for familiarity with the data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Depends: 
-    plotly,
-    R (>= 2.10),
-    tidyverse
+    R (>= 2.10)
 LazyData: true
 Suggests: 
     knitr,
@@ -20,3 +18,6 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
+Imports: 
+    plotly,
+    tidyverse

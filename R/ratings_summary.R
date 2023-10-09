@@ -10,6 +10,11 @@
 #'
 #' @return is the data frame with two columns: "Statistic" (the name of the statistic) and "Value".
 #'
+#' @examples
+#' summary_tvrating(tv_ratings)
+#'
+#' where tv_ratings is the dataset used.
+#'
 #' @export
 summary_tvrating <- function(tvrating) {
   require(dplyr)

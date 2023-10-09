@@ -16,28 +16,42 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Introduction
+## Data Description
 
-This is the `tvrating` package! This vignette is designed to introduce the user to the package and aid them with using it.
+This dataset contains TV Shows from the years 1990 through till 2018 including their:
+
+* Title ID: unique id for the show
+* Season Number: Season number of the show
+* Date of Release: Date when show was released
+* Average Rating of Season: Average rating of a season of a show
+* Share of Viewership: Average viewership share of a season of a show
+* Genres: Genre of the show
+
+The data is originally 
+from **The Economist** [Data GitHub](https://github.com/TheEconomist) via IMDb from
+1990 to 2018 and found on the `tidytuesday` repository of `rfordatascience` which can be found [here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-01-08).
+
+Some outstanding data analysis and visualizations were already conducted by the data experts from **The Economist** which can be found in their [article](https://www.economist.com/graphic-detail/2018/11/24/tvs-golden-age-is-real) which is why a decision was taken to conduct our own analysis journey and leaving this masterpiece alone.
+
 
 # Loading the Package
 
 To be able to use the package and access the data, the user must load `tvrating` from the library and calling the object `tvrating`
 
-```{r setup}
+```{r setup, include = FALSE}
+library(plotly)
 library(tidyverse)
 library(tvrating)
-data("tvrating")
 ```
 
-# Use-case Examples
+# Using the package:
 
 ## Example 1: 5-Number Summary
 
 This package contains functions that allows users to be able to process or manipulate the data. As an example, the user can use the `summary_tv` function to calculate the famous **five number summary** of the show ratings (column: `av_rating`) i.e. minimum, Q1, median, Q3, maximum. Returns NULL if inputs are less than a total of 5. 
 
 ```{r process}
-summary_tvrating(tvrating)
+summary_tvrating(tv_ratings)
 ```
 
 ## Example 2: Genre Distribution
@@ -45,7 +59,7 @@ summary_tvrating(tvrating)
 Another example is being able to plot the genre distribution plot based on the selected top genres using the filter. The user must use the following command:
 
 ```{r}
-genre_distribution_plot(tvrating, selected_genre = 5)
+genre_plot(tv_ratings, selected_genre = 5)
 
 ```
 

@@ -8,8 +8,15 @@
 #'
 #' @return The plot for the genre distribution.
 #'
+#' @examples
+#' # example code
+#'
+#'genre_plot(tv_ratings, selected_genre = 5)
+#'
+#' tv_ratings is the dataset while selected_genre = 5 shows the top 5 genres in the plot.
+#'
 #' @export
-genre_distribution_plot <- function(tv_data, selected_genre) {
+genre_plot <- function(tv_data, selected_genre) {
   separate_genres <- tv_data |>
     separate_rows(genres, sep = ",")
 

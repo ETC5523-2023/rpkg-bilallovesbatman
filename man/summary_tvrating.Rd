@@ -20,3 +20,9 @@ If the input is a numerical vector of at least 5 values, it returns a data frame
 
 If the input is a numerical vector of less than 5 values, it returns NULL.
 }
+\examples{
+summary_tvrating(tv_ratings)
+
+where tv_ratings is the dataset used.
+
+}
